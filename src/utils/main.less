@@ -1,0 +1,236 @@
+/* 主题色 */
+@primary: #53a8ff;
+@primarylight: #D9ECFF;
+@secondary: #1572cb;
+
+/* 辅助色 */
+@success: #67C23A;
+@successlight: #E1F3D8;
+@warning: #E6A23C;
+@warninglight: #faecd8;
+@danger: #F56C6C;
+@dangerlight: #FED2E2;
+@info: #909399;
+
+/* 中性色 */
+@black: #303133;
+@silverdark: #606266;
+@silver: #909399;
+@silverlight: #C0C4CC;
+@graydark: #DCDFE6;
+@gray: #E4E7ED;
+@graylight: #EBEEF5;
+@darkwhite: #F8F8F8;
+@white: #FFFFFF;
+
+/* 主标签 */
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: @darkwhite;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft YaHei","微软雅黑",Arial,sans-serif !important;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 全局样式 */
+* {
+  outline: none !important;
+  box-sizing: border-box !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* 结构树高度 */
+.el-tree-node__content {
+  height: 45px !important;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* 表格高度 */
+.el-table td, .el-table th {
+  padding: 10px 0 !important;
+}
+
+/* 卡片边距 */
+.el-card__body {
+  padding: 14px !important;
+}
+
+/* 内容框 */
+.el-main {
+  padding: 14px !important;
+}
+
+/* 日期选择器宽度 */
+.el-range-editor--small.el-input__inner {
+  width: 100% !important;
+}
+
+/* 主题色 */
+.primary { color: @primary; }
+.secondary { color: @secondary; }
+.primary-bg { background-color: @primary; }
+.primarylight { color: @primarylight; }
+.primarylight-bg { background-color: @primarylight; }
+.primary-bd { border-color: @primary !important; }
+
+/* 黑色 */
+.black { color: @black; }
+.black-bg { background-color: @black; }
+.black-bd { border-color: @black !important; }
+
+/* 银色，用于段落颜色 */
+.silver { color: @silver; }
+.silver-bg { background-color: @silver; }
+.silver-bd { border-color: @silver !important; }
+.silverdark { color: @silverdark; }
+.silverdark-bg { background-color: @silverdark; }
+.silverdark-bd { border-color: @silverdark !important; }
+.silverlight { color: @silverlight; }
+.silverlight-bg { background-color: @silverlight; }
+.silverlight-bd { border-color: @silverlight !important; }
+
+/* 灰色，用于不可点击元素 */
+.gray { color: @gray; }
+.gray-bg { background-color: @gray; }
+.light-gray-bg { background-color: #f0f0f0; }
+.gray-bd { border-color: @gray !important; }
+.graydark { color: @graydark; }
+.graydark-bg { background-color: @graydark; }
+.graydark-bd { border-color: @graydark !important; }
+.graylight { color: @graylight; }
+.graylight-bg { background-color: @graylight; }
+.graylight-bd { border-color: @graylight !important; }
+
+/* 白色，用于背景颜色 */
+.white { color: #FFFFFF; }
+.white-bg { background-color: #FFFFFF; }
+.whitedark { color: @darkwhite; }
+.whitedark-bg { background-color: @darkwhite; }
+
+/* 提示色，用于各种提示 */
+.info { color: @info; }
+.info-bg { background-color: @info; }
+.success { color: @success; }
+.success-bg { background-color: @success; }
+.successlight-bg { background-color: @successlight; }
+.success-bd { border-color: @success !important; }
+.warning { color: @warning; }
+.warning-bg { background-color: @warning; }
+.warninglight-bg { background-color: @warninglight; }
+.warning-bd { border-color: @warning !important; }
+.danger { color: @danger; }
+.danger-bg { background-color: @danger; }
+.dangerlight-bg { background-color: @dangerlight; }
+.danger-bd { border-color: @danger !important; }
+
+/******** 背景样式 *********/
+.themePrimary {
+  background-color: @primary
+}
+.themeSuccess {
+  background-color: @success
+}
+.themeWarning {
+  background-color: @warning
+}
+.themeBlack {
+  background-color: @black
+}
+.themeSilver {
+  background-color: @silver
+}
+.themeGray {
+  background-color: @gray
+}
+.themeWhite {
+  background-color: @white
+}
+.theme1 {
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
+}
+.theme2 {
+  background: #30E8BF;
+  background: -webkit-linear-gradient(to bottom right, #FF8235, #30E8BF);
+  background: linear-gradient(to bottom right, #FF8235, #30E8BF);
+}
+.theme3 {
+  background: #00c3ff;
+  background: -webkit-linear-gradient(to bottom right, #ffff1c, #00c3ff);
+  background: linear-gradient(to bottom right, #ffff1c, #00c3ff);
+}
+
+/******** 文本Hover *********/
+.hover-text:hover {
+  color: @primary;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/******** Hover *********/
+.hover:hover {
+  color: @primary;
+  cursor: pointer;
+}
+
+/******** Hover *********/
+.hover-back:hover {
+  background-color: @primarylight;
+  cursor: pointer;
+}
+
+/******** Vue动画效果 *********/
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter,.fade-leave-to {
+  opacity: 0;
+}
+.scale-fade-enter-active,
+.scale-fade-leave-active {
+  transition: all .3s ease;
+}
+.scale-fade-enter,
+.slide-fade-leave-to {
+  transform: scale(0,0);
+  opacity: 0;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.down-fade-enter-active,
+.down-fade-leave-active {
+  transition: all .3s ease;
+}
+.down-fade-enter,
+.down-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.loginDay{
+  background-color: #F9F9F9;
+}
+.loginNight{
+  background-color: #232c3d;
+}
+.logoSvg {
+  width: 60px;
+  height: 60px;
+}
+.logoTitle {
+  color: #333333;
+}
