@@ -1,5 +1,5 @@
 <template>
   <div>
-    登录
+    中央数据库管理
   </div>
 </template>
