@@ -1,12 +1,13 @@
 <template>
   <a-layout class="ht-100x">
-    <a-layout-sider>
+    <a-layout-sider class="primary-bg">
       <div class="ht-60 white">
         <a-icon class="pr tp-22 lf-22" type="menu-fold" />
       </div>
       <a-menu
       mode="inline"
       theme="dark"
+      class="primary-bg"
       @click="menuClick"
       :inline-collapsed="collapsed">
       <a-menu-item
@@ -18,9 +19,9 @@
     </a-menu>
     </a-layout-sider>
     <a-layout>
-      <a-layout-header class="white-bg">
+      <a-layout-header class="white-bg bb">
         <span class="navtitle">民主党派代表人士库</span>
-        <ul class="navlink">
+        <ul class="navlink primarylight">
           <router-link tag="li" to="/welcome">
             <a-icon type="bank" />
             <span>首页</span>
@@ -90,24 +91,3 @@ export default {
   }
 }
 </script>
-
-<style type="text/css" lang="less" scoped>
-  .navtitle {
-    font-weight: 500;
-    font-size: 22px;
-    position: relative;
-    left: -30px;
-  }
-  .navlink {
-    margin-bottom: 0;
-    list-style-type: none;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    li {
-      padding: 0 20px;
-      display: inline-block;
-      cursor: pointer;
-    }
-  }
-</style>

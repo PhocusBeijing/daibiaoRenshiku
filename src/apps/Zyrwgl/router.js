@@ -11,11 +11,11 @@ export default {
       redirect: '/zyrwgl/list'
     }, {
       path: '/zyrwgl/list',
-      name: ZyrwglList,
+      name: 'ZyrwglList',
       component: ZyrwglList
     }, {
       path: '/zyrwgl/info',
-      name: ZyrwglInfo,
+      name: 'ZyrwglInfo',
       component: ZyrwglInfo
     }
   ]

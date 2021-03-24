@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Welcome from '@/apps/Main/router.js'
+import Main from '@/apps/Main/router.js'
 import Login from '@/apps/Login/router.js'
 import Errorpage from '@/apps/Error/router.js'
 
@@ -16,7 +16,7 @@ export default new Router({
       redirect: '/error'
     },
     Login,
-    Welcome,
+    Main,
     Errorpage
   ]
 })

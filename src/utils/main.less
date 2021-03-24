@@ -1,6 +1,6 @@
 /* 主题色 */
-@primary: #53a8ff;
-@primarylight: #D9ECFF;
+@primary: #1b4983;
+@primarylight: #245ba1;
 @secondary: #1572cb;
 
 /* 辅助色 */
@@ -20,7 +20,7 @@
 @graydark: #DCDFE6;
 @gray: #E4E7ED;
 @graylight: #EBEEF5;
-@darkwhite: #F8F8F8;
+@darkwhite: #ecf3f5;
 @white: #FFFFFF;
 
 /* 主标签 */
@@ -45,30 +45,43 @@ html, body, #app {
   padding: 0;
 }
 
-/* 结构树高度 */
-.el-tree-node__content {
-  height: 45px !important;
-  border-bottom: 1px solid #f1f1f1;
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: @primarylight;
+  padding: 0 15px;
+  transition: all .2s;
+  margin: 0 4px;
+  border: 1px solid @primarylight;
+  border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+    color: @white;
+    background: @primarylight;
+  }
 }
 
-/* 表格高度 */
-.el-table td, .el-table th {
-  padding: 10px 0 !important;
+.navtitle {
+  font-weight: 500;
+  font-size: 22px;
+  position: relative;
+  left: -30px;
 }
-
-/* 卡片边距 */
-.el-card__body {
-  padding: 14px !important;
-}
-
-/* 内容框 */
-.el-main {
-  padding: 14px !important;
-}
-
-/* 日期选择器宽度 */
-.el-range-editor--small.el-input__inner {
-  width: 100% !important;
+.navlink {
+  margin-bottom: 0;
+  list-style-type: none;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  li {
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+  }
 }
 
 /* 主题色 */
@@ -129,44 +142,6 @@ html, body, #app {
 .dangerlight-bg { background-color: @dangerlight; }
 .danger-bd { border-color: @danger !important; }
 
-/******** 背景样式 *********/
-.themePrimary {
-  background-color: @primary
-}
-.themeSuccess {
-  background-color: @success
-}
-.themeWarning {
-  background-color: @warning
-}
-.themeBlack {
-  background-color: @black
-}
-.themeSilver {
-  background-color: @silver
-}
-.themeGray {
-  background-color: @gray
-}
-.themeWhite {
-  background-color: @white
-}
-.theme1 {
-  background: #12c2e9;
-  background: -webkit-linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
-  background: linear-gradient(to bottom right, #f64f59, #c471ed, #12c2e9);
-}
-.theme2 {
-  background: #30E8BF;
-  background: -webkit-linear-gradient(to bottom right, #FF8235, #30E8BF);
-  background: linear-gradient(to bottom right, #FF8235, #30E8BF);
-}
-.theme3 {
-  background: #00c3ff;
-  background: -webkit-linear-gradient(to bottom right, #ffff1c, #00c3ff);
-  background: linear-gradient(to bottom right, #ffff1c, #00c3ff);
-}
-
 /******** 文本Hover *********/
 .hover-text:hover {
   color: @primary;
@@ -220,17 +195,4 @@ html, body, #app {
 .down-fade-leave-to {
   transform: translateY(-10px);
   opacity: 0;
-}
-.loginDay{
-  background-color: #F9F9F9;
-}
-.loginNight{
-  background-color: #232c3d;
-}
-.logoSvg {
-  width: 60px;
-  height: 60px;
-}
-.logoTitle {
-  color: #333333;
 }
