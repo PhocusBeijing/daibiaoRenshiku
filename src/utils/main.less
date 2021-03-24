@@ -48,14 +48,14 @@ html, body, #app {
 /* 按钮样式 */
 .btn {
   display: inline-block;
-  height: 32px;
-  line-height: 30px;
+  height: 28px;
+  line-height: 26px;
   text-align: center;
   background: none;
   color: @primarylight;
   padding: 0 15px;
   transition: all .2s;
-  margin: 0 4px;
+  margin: 0 6px;
   border: 1px solid @primarylight;
   border-radius: 4px;
   &:hover {
@@ -63,6 +63,11 @@ html, body, #app {
     color: @white;
     background: @primarylight;
   }
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  background: @primarylight !important;
 }
 
 .navtitle {

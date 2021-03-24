@@ -1,13 +1,25 @@
 <template>
-  <div v-if="visible" class="wrapper">
-    <div class="mask"></div>
-    <div class="container centerbox white-bg card-shadow">
-      <div class="primary-bg ht-40 pr">
-        <span class="title">弹框名称</span>
-        <span @click="visible=false" class="close"><a-icon type="close" /></span>
+  <transition name="slide-fade">
+    <div v-if="visible" class="wrapper">
+      <div class="mask"></div>
+      <div
+        :style="'width: '+width+'px; height: '+height+'px;'"
+        class="container centerbox white-bg card-shadow">
+        <!-- 标题 -->
+        <div class="primarylight-bg ht-40 pr">
+          <span class="title">弹框名称</span>
+          <span @click="visible=false" class="close"><a-icon type="close" /></span>
+        </div>
+        <!-- 内容 -->
+        <div>Content</div>
+        <!-- 操作 -->
+        <div class="ta-c pd-24 wi-100x pa bm-0 lf-0">
+          <button class="btn btn-primary">确认</button>
+          <button @click="visible=false" class="btn">取消</button>
+        </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script type="text/javascript">
@@ -15,6 +27,8 @@ export default {
   name: 'defaultDialog',
   data () {
     return {
+      width: 600,
+      height: 400,
       visible: false
     }
   }
@@ -56,8 +70,6 @@ export default {
       right: 0;
     }
     .container {
-      width: 600px;
-      height: 400px;
       z-index: 2;
     }
   }

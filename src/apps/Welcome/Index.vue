@@ -14,12 +14,15 @@
     </div>
     <!-- 操作栏 -->
     <div class="pd-16">
-      <div class="pd-20 ht-72 white-bg bdr-4 pr">
+      <div class="pd-20 white-bg bdr-4 pr">
         <div class="dis-ib">
           <button class="btn"><a-icon type="account-book" /> 操作A</button>
           <button class="btn"><a-icon type="account-book" /> 操作B</button>
+          <button
+            @click="$refs.xzrysbrw.visible=true"
+            class="btn"><a-icon type="account-book" /> 显示弹框</button>
         </div>
-        <div class="dis-ib fr pr tp-8 rt-6 primarylight">
+        <div class="dis-ib fr pr tp-6 rt-6 primarylight">
           <span class="dis-ib hover mr-20"><a-icon type="account-book" /> 操作A</span>
           <span class="dis-ib hover"><a-icon type="account-book" /> 操作B</span>
         </div>
@@ -39,6 +42,8 @@
         </a-table>
       </div>
     </div>
+    <!-- 弹框 -->
+    <fo-xzrysbrw ref="xzrysbrw" />
   </div>
 </template>
 
